@@ -1,0 +1,8 @@
+<svg id="vuesax_twotone_timer" data-name="vuesax/twotone/timer" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g id="timer">
+    <path id="Vector" d="M2.906.063H-.344A.406.406,0,0,1-.75-.344.406.406,0,0,1-.344-.75h3.25a.406.406,0,0,1,.406.406A.406.406,0,0,1,2.906.063Z" transform="translate(5.219 1.427)" fill="#8d98aa" opacity="0.4"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0H13V13H0Z" fill="none" opacity="0"/>
+    <path id="Vector-3" data-name="Vector" d="M4.4-.75A5.146,5.146,0,1,1-.75,4.4,5.152,5.152,0,0,1,4.4-.75Zm0,9.479A4.333,4.333,0,1,0,.063,4.4,4.338,4.338,0,0,0,4.4,8.729Z" transform="translate(1.969 2.781)" fill="#8d98aa"/>
+    <path id="Vector-4" data-name="Vector" d="M1.59,3.7a.4.4,0,0,1-.208-.057L-.087,2.764A1.457,1.457,0,0,1-.75,1.6V-.344A.406.406,0,0,1-.344-.75a.406.406,0,0,1,.406.406V1.6a.65.65,0,0,0,.265.466l1.47.877A.406.406,0,0,1,1.59,3.7Z" transform="translate(6.533 5.393)" fill="#8d98aa" opacity="0.4"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+      <linearGradient id="linear-gradient" y1="-0.047" x2="0.666" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#171e31"/>
+        <stop offset="1" stop-color="#646875"/>
+      </linearGradient>
+      <clipPath id="clip-path">
+        <rect id="Rectangle_19" data-name="Rectangle 19" width="50" height="50" transform="translate(48 845)" fill="url(#linear-gradient)"/>
+      </clipPath>
+      <linearGradient id="linear-gradient-4" x1="1.252" y1="0.5" x2="0.216" y2="0.5" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#d5d5d5"/>
+        <stop offset="1" stop-color="#646875"/>
+      </linearGradient>
+    </defs>
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(-48 -845)" clip-path="url(#clip-path)">
+      <g id="Group_138784" data-name="Group 138784" transform="translate(48 845)">
+        <rect id="Rectangle_111479" data-name="Rectangle 111479" width="50" height="50" fill="none" opacity="0"/>
+        <g id="Group_138796" data-name="Group 138796" transform="translate(13.659 13.321)">
+          <path id="Vector" d="M7.648,0a7.6,7.6,0,1,0-.193,15.208,1.293,1.293,0,0,1,.352,0H7.92A7.605,7.605,0,1,0,7.648,0Z" transform="translate(3.634 0.001)" fill="url(#linear-gradient)"/>
+          <path id="Vector-2" data-name="Vector" d="M19.422,2.235a15.911,15.911,0,0,0-16.266,0A6.279,6.279,0,0,0,0,7.4a6.272,6.272,0,0,0,3.141,5.144,14.806,14.806,0,0,0,8.14,2.26,14.806,14.806,0,0,0,8.14-2.26,6.322,6.322,0,0,0,3.139-5.176,6.284,6.284,0,0,0-3.139-5.128Z" transform="translate(0 17.254)" fill="url(#linear-gradient)"/>
+        </g>
+        <path id="Vector-3" data-name="Vector" d="M6.966,2.211H1.121A1.106,1.106,0,1,1,1.121,0H6.966a1.109,1.109,0,0,1,1.11,1.106A1.118,1.118,0,0,1,6.966,2.211Z" transform="translate(20.904 36.864)" fill="url(#linear-gradient-4)"/>
+        <path id="Vector-4" data-name="Vector" d="M6.966,2.211H1.121A1.106,1.106,0,1,1,1.121,0H6.966a1.109,1.109,0,0,1,1.11,1.106A1.118,1.118,0,0,1,6.966,2.211Z" transform="translate(20.904 36.864)" fill="url(#linear-gradient-4)"/>
+      </g>
+    </g>
+  </svg>
+  

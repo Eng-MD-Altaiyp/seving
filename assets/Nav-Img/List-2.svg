@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="Group_138778" data-name="Group 138778" transform="translate(754 -903)">
+    <rect id="Rectangle_111479" data-name="Rectangle 111479" width="41" height="41" transform="translate(-754 903)" fill="none" opacity="0"/>
+    <g id="Group_138779" data-name="Group 138779" transform="translate(-0.377)">
+      <path id="Vector" d="M21.646,5.412V18.6c0,4.059-2.422,5.412-5.412,5.412H5.412C2.422,24.014,0,22.661,0,18.6V5.412C0,1.015,2.422,0,5.412,0A3.026,3.026,0,0,0,6.3,2.151a3.026,3.026,0,0,0,2.151.893h4.735A3.049,3.049,0,0,0,16.235,0C19.224,0,21.646,1.015,21.646,5.412Z" transform="translate(-744.323 915.749)" fill="#bac1cc" opacity="0.4"/>
+      <path id="Vector-2" data-name="Vector" d="M10.823,3.044A3.049,3.049,0,0,1,7.779,6.088H3.044A3.044,3.044,0,0,1,3.044,0H7.779a3.049,3.049,0,0,1,3.044,3.044Z" transform="translate(-738.911 912.705)" fill="#bac1cc"/>
+      <g id="Group" transform="translate(-739.926 926.572)">
+        <path id="Vector-3" data-name="Vector" d="M6.426,2.029H1.015A1.022,1.022,0,0,1,0,1.015,1.022,1.022,0,0,1,1.015,0H6.426A1.022,1.022,0,0,1,7.441,1.015,1.022,1.022,0,0,1,6.426,2.029Z" transform="translate(0 0)" fill="#bac1cc"/>
+      </g>
+      <g id="Group-2" data-name="Group" transform="translate(-739.926 931.984)">
+        <path id="Vector-4" data-name="Vector" d="M11.838,2.029H1.015A1.022,1.022,0,0,1,0,1.015,1.022,1.022,0,0,1,1.015,0H11.838a1.022,1.022,0,0,1,1.015,1.015A1.022,1.022,0,0,1,11.838,2.029Z" transform="translate(0 0)" fill="#bac1cc"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="gps" transform="translate(-556 -252)">
+    <g id="gps-2" data-name="gps">
+      <path id="Vector" d="M7.5-.75A8.25,8.25,0,1,1-.75,7.5,8.259,8.259,0,0,1,7.5-.75Zm0,15A6.75,6.75,0,1,0,.75,7.5,6.758,6.758,0,0,0,7.5,14.25Z" transform="translate(560.5 256.5)" fill="#8d98aa"/>
+      <path id="Vector-2" data-name="Vector" d="M3-.75A3.75,3.75,0,1,1-.75,3,3.754,3.754,0,0,1,3-.75Zm0,6A2.25,2.25,0,1,0,.75,3,2.253,2.253,0,0,0,3,5.25Z" transform="translate(565 261)" fill="#8d98aa" opacity="0.4"/>
+      <path id="Vector-3" data-name="Vector" d="M0,2.75A.75.75,0,0,1-.75,2V0A.75.75,0,0,1,0-.75.75.75,0,0,1,.75,0V2A.75.75,0,0,1,0,2.75Z" transform="translate(568 254)" fill="#8d98aa" opacity="0.4"/>
+      <path id="Vector-4" data-name="Vector" d="M2,.75H0A.75.75,0,0,1-.75,0,.75.75,0,0,1,0-.75H2A.75.75,0,0,1,2.75,0,.75.75,0,0,1,2,.75Z" transform="translate(558 264)" fill="#8d98aa" opacity="0.4"/>
+      <path id="Vector-5" data-name="Vector" d="M0,2.75A.75.75,0,0,1-.75,2V0A.75.75,0,0,1,0-.75.75.75,0,0,1,.75,0V2A.75.75,0,0,1,0,2.75Z" transform="translate(568 272)" fill="#8d98aa" opacity="0.4"/>
+      <path id="Vector-6" data-name="Vector" d="M2,.75H0A.75.75,0,0,1-.75,0,.75.75,0,0,1,0-.75H2A.75.75,0,0,1,2.75,0,.75.75,0,0,1,2,.75Z" transform="translate(576 264)" fill="#8d98aa" opacity="0.4"/>
+      <path id="Vector-7" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(580 276) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="vuesax_twotone_brifecase-cross" data-name="vuesax/twotone/brifecase-cross" transform="translate(-300 -188)">
+    <g id="brifecase-cross" transform="translate(300 188)">
+      <path id="Vector" d="M0,0H30V30H0Z" transform="translate(30 30) rotate(180)" fill="none" opacity="0"/>
+      <g id="_4900429_medicine_treatment_drugs_tablets_pills_capsule" data-name="4900429_medicine_treatment_drugs_tablets_pills_capsule" transform="translate(1.563 1.563)">
+        <path id="Path_60" data-name="Path 60" d="M36.858,40a4,4,0,1,0,0-8H34v8Z" transform="translate(-14.565 -13.708)" fill="#697485" opacity="0.4"/>
+        <path id="Path_61" data-name="Path 61" d="M1.5,25.5h8v8h-8" transform="translate(-0.643 -10.924)" fill="#697485" opacity="0.4"/>
+        <path id="Path_62" data-name="Path 62" d="M16.147,8H4.715A1.715,1.715,0,0,1,3,6.288V1.715A1.715,1.715,0,0,1,4.715,0H16.147a1.715,1.715,0,0,1,1.715,1.715V6.288A1.715,1.715,0,0,1,16.147,8ZM5.286,5.716H15.576V2.286H5.286Z" transform="translate(-1.285)" fill="#697485"/>
+        <path id="Path_63" data-name="Path 63" d="M16.005,32.578H1.715A1.715,1.715,0,0,1,0,30.863V18.219a3.429,3.429,0,0,1,2.343-3.252l1.087-.36V12H5.716v3.43a1.143,1.143,0,0,1-.783,1.086l-1.863.629a1.143,1.143,0,0,0-.783,1.075V30.292H16.005Z" transform="translate(0 -5.141)" fill="#697485"/>
+        <path id="Path_64" data-name="Path 64" d="M27.716,24H25.43V18.219a1.143,1.143,0,0,0-.783-1.075l-1.863-.629A1.143,1.143,0,0,1,22,15.43V12h2.286v2.607l1.086.36a3.43,3.43,0,0,1,2.344,3.252Z" transform="translate(-9.424 -5.141)" fill="#697485"/>
+        <path id="Path_65" data-name="Path 65" d="M30.861,40.289H25.145a5.145,5.145,0,0,1,0-10.289h5.716a5.145,5.145,0,1,1,0,10.289Zm-5.716-8a2.858,2.858,0,0,0,0,5.716h5.716a2.858,2.858,0,1,0,0-5.716Z" transform="translate(-8.568 -12.852)" fill="#697485"/>
+        <rect id="Rectangle_40" data-name="Rectangle 40" width="27" height="27" transform="translate(0.438 0.438)" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

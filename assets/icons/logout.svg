@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="vuesax_twotone_login" data-name="vuesax/twotone/login" transform="translate(-684 -444)">
+    <g id="login" transform="translate(684 444)">
+      <path id="Vector" d="M8.113,24.925H7.95c-2.8,0-4.771-.529-6.19-1.665A7.412,7.412,0,0,1-.733,17.837a.937.937,0,0,1,1.867-.174,5.6,5.6,0,0,0,1.8,4.133c1.055.844,2.7,1.254,5.019,1.254h.162c2.594,0,4.292-.49,5.345-1.543S15,18.757,15,16.163V8.012c0-2.594-.49-4.292-1.543-5.345S10.707,1.125,8.113,1.125H7.95c-2.339,0-3.989.416-5.044,1.272S1.3,4.581,1.122,6.605A.937.937,0,1,1-.747,6.445C-.318,1.469,2.364-.75,7.95-.75h.162c3.124,0,5.244.665,6.671,2.092s2.092,3.547,2.092,6.671v8.15c0,3.124-.665,5.244-2.092,6.671S11.236,24.925,8.113,24.925Z" transform="translate(10.938 2.925)" fill="#ef5350"/>
+      <g id="Group_655" data-name="Group 655" transform="translate(1.563 9.875)" opacity="0.4">
+        <path id="Vector-2" data-name="Vector" d="M16.288,1.125H.188a.938.938,0,0,1,0-1.875h16.1a.938.938,0,0,1,0,1.875Z" transform="translate(0.75 4.937)" fill="#ef5350"/>
+        <path id="Vector-3" data-name="Vector" d="M.187,9.5A.937.937,0,0,1-.475,7.9L3.049,4.375-.475.85A.937.937,0,0,1,.85-.475L5.038,3.712a.938.938,0,0,1,0,1.326L.85,9.225A.935.935,0,0,1,.187,9.5Z" transform="translate(14.063 0.75)" fill="#ef5350"/>
+      </g>
+      <path id="Vector-4" data-name="Vector" d="M0,0H30V30H0Z" transform="translate(30 30) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

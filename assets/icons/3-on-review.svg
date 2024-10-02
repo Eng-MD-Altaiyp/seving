@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="_3_-_on" data-name="3 - on" transform="translate(-12937 -7358)">
+    <rect id="Rectangle_111617" data-name="Rectangle 111617" width="30" height="30" transform="translate(12937 7358)" fill="none" opacity="0"/>
+    <g id="Slightly_Smiling_Face" data-name="Slightly Smiling Face" transform="translate(12938.391 7359.127)">
+      <g id="circle" transform="translate(0 0)">
+        <ellipse id="Ellipse_6566" data-name="Ellipse 6566" cx="14.02" cy="14.02" rx="14.02" ry="14.02" fill="#fdca47"/>
+      </g>
+      <path id="mouth" d="M3788.4,345.5a.392.392,0,0,1,.591.47,6.885,6.885,0,0,1-11.763,0,.392.392,0,0,1,.591-.47,10.135,10.135,0,0,0,10.58,0Z" transform="translate(-3769.093 -327.372)" fill="#664100"/>
+      <g id="eyes" transform="translate(7.437 7.827)">
+        <ellipse id="Ellipse_6567" data-name="Ellipse 6567" cx="1.878" cy="2.73" rx="1.878" ry="2.73" transform="translate(9.409)" fill="#664100"/>
+        <ellipse id="Ellipse_6568" data-name="Ellipse 6568" cx="1.878" cy="2.73" rx="1.878" ry="2.73" fill="#664100"/>
+      </g>
+    </g>
+  </g>
+</svg>

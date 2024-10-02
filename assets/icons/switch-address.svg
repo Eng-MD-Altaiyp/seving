@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="vuesax_twotone_frame" data-name="vuesax/twotone/frame" transform="translate(-684 -252)">
+    <g id="frame">
+      <path id="Vector" d="M5.02,5.76a.748.748,0,0,1-.53-.219L-.53.531a.75.75,0,0,1,0-1.061.75.75,0,0,1,1.061,0l5.02,5.01A.75.75,0,0,1,5.02,5.76Z" transform="translate(687.99 267.49)" fill="#8d98aa"/>
+      <path id="Vector-2" data-name="Vector" d="M0,17.75A.75.75,0,0,1-.75,17V0A.75.75,0,0,1,0-.75.75.75,0,0,1,.75,0V17A.75.75,0,0,1,0,17.75Z" transform="translate(693.01 255.5)" fill="#8d98aa"/>
+      <g id="Group_661" data-name="Group 661" opacity="0.4">
+        <path id="Vector-3" data-name="Vector" d="M5.02,5.76a.748.748,0,0,1-.53-.219L-.53.531a.75.75,0,0,1,0-1.061.75.75,0,0,1,1.061,0l5.02,5.01A.75.75,0,0,1,5.02,5.76Z" transform="translate(698.99 255.5)" fill="#8d98aa"/>
+        <path id="Vector-4" data-name="Vector" d="M0,17.75A.75.75,0,0,1-.75,17V0A.75.75,0,0,1,0-.75.75.75,0,0,1,.75,0V17A.75.75,0,0,1,0,17.75Z" transform="translate(698.99 255.5)" fill="#8d98aa"/>
+      </g>
+      <path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(708 276) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>
