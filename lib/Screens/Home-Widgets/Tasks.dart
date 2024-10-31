@@ -15,6 +15,8 @@ import '../../Models/Models_And_Classes/Colors.dart';
 import '../../Widgets/All_Deitals.dart';
 import '../../localization/app_localizations.dart';
 
+
+
 class Tasks extends StatefulWidget {
   const Tasks({super.key});
 
@@ -87,7 +89,7 @@ class _TasksState extends State<Tasks> {
           top: 0,
           child: Container(
             // color: Colors.red,
-            child: Column(
+            child: ListView(
               children: [
                 All_Deitals(),
                 PhloxAnimations(
@@ -284,6 +286,9 @@ class _TasksState extends State<Tasks> {
     } else if(type == 'Car')
     {
       type = 'assets/icons/service-type-6.svg';
+    } else if(type == 'Other')
+    {
+      type = 'assets/icons/other-address.svg';
     } return type;
   }
 
@@ -302,6 +307,9 @@ class _TasksState extends State<Tasks> {
     } else if(type == 'Car')
     {
       type = '${AppLocalizations.of(context).BuyCar}';
+    } else if(type == 'Other')
+    {
+      type = '${AppLocalizations.of(context).BuyOther}';
     } return type;
   }
 
@@ -829,7 +837,9 @@ class _TasksState extends State<Tasks> {
       ),
     );
   }
+
   List<Widget> offisr(List list) {
+
     return list.map(
       (e) {
         return ClipRRect(

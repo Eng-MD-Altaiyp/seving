@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:phlox_animations/phlox_animations.dart';
+import 'package:seving/localization/app_localizations.dart';
 import 'Models/Models_And_Classes/Classes _and_barameters.dart';
 import 'Models/Models_And_Classes/Colors.dart';
+import 'Screens/User_Setting_Account/User_Setting_Account.dart';
 
 class EndDrawers extends StatefulWidget {
   const EndDrawers({super.key});
@@ -59,9 +61,9 @@ class _EndDrawersState extends State<EndDrawers> {
                                   Expanded(
                                     flex: 1,
                                     child: Align(
-                                      alignment: Alignment.bottomRight,
+                                      alignment: lang == 'English' ?Alignment.bottomLeft:Alignment.bottomRight,
                                       child: Padding(
-                                        padding: const EdgeInsets.only(right: 5.0),
+                                        padding: const EdgeInsets.only(right: 5.0,left: 5),
                                         child: Text(
                                           "مرحباً",
                                           style: const TextStyle(
@@ -73,10 +75,10 @@ class _EndDrawersState extends State<EndDrawers> {
                                   Expanded(
                                     flex: 1,
                                     child: Align(
-                                      alignment: Alignment.bottomRight,
+                                      alignment: lang == 'English' ?Alignment.bottomLeft:Alignment.bottomRight,
                                       child: Padding(
                                         padding:
-                                            const EdgeInsets.only(right: 10.0),
+                                            const EdgeInsets.only(right: 10.0,left: 10),
                                         child: Text(
                                           User_Names.toString(),
                                           style: TextStyle(
@@ -93,9 +95,9 @@ class _EndDrawersState extends State<EndDrawers> {
                                   Expanded(
                                     flex: 1,
                                     child: Align(
-                                      alignment: Alignment.bottomRight,
+                                      alignment: lang == 'English' ?Alignment.bottomLeft:Alignment.bottomRight,
                                       child: Padding(
-                                        padding: const EdgeInsets.only(right: 50.0),
+                                        padding: const EdgeInsets.only(right: 10.0,left: 10),
                                         child: Text(
                                           " ${User_Email}",
                                           style: TextStyle(
@@ -157,14 +159,8 @@ class _EndDrawersState extends State<EndDrawers> {
                   padding: const EdgeInsets.only(top: 10, bottom: 10, right: 15, left: 15),
                   child: InkWell(
                     onTap: () {
-                      setState(() {
-                        // showDialog(
-                        //     barrierDismissible: false,
-                        //     context: context,
-                        //     builder: (BuildContext context) {
-                        //       return const Name_Devise();
-                        //     });
-                      });
+                      Navigator.of(context).pop();
+                      Navigator.pushNamed(context, '/Settings');
                     },
                     child: PhloxAnimations(
                       duration: const Duration(milliseconds: 200),
@@ -180,52 +176,6 @@ class _EndDrawersState extends State<EndDrawers> {
                         child: Row(
                           children: [
                             Expanded(
-                              flex: 1,
-                              child: Padding(
-                                padding: const EdgeInsets.only(
-                                    top: 5, left: 5, bottom: 5, right: 8),
-                                child: Container(
-                                  child: SvgPicture.asset(
-                                    "assets/icons/edit.svg",
-                                    width: ScreenWidth! / 35,
-                                    height: ScreenHeight! / 35,
-                                    color: color3,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              flex: 6,
-                              child: Container(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: [
-                                    Text(
-                                      'عنوان الجهاز',
-                                      style: TextStyle(
-                                        fontSize: ScreenHeight! / 46,
-                                        fontWeight: FontWeight.bold,
-                                        fontFamily: 'Cairo-VariableFont_slnt',
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 2,
-                                    ),
-                                    Text(
-                                      DeviceIpAddress,
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: color2p,
-                                        fontSize: ScreenWidth! / 30,
-                                        fontFamily: 'Cairo-VariableFont_slnt',
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            Expanded(
                               flex: 2,
                               child: Padding(
                                 padding: const EdgeInsets.only(
@@ -239,7 +189,7 @@ class _EndDrawersState extends State<EndDrawers> {
                                   ),
                                   child: Center(
                                     child: SvgPicture.asset(
-                                      'assets/icons/browser.svg',
+                                      'assets/icons/setting.svg',
                                       width: ScreenWidth! / 35,
                                       height: ScreenHeight! / 35,
                                       color: color3,
@@ -248,6 +198,19 @@ class _EndDrawersState extends State<EndDrawers> {
                                 ),
                               ),
                             ),
+                            Expanded(
+                              flex: 6,
+                              child: Text(
+                                AppLocalizations.of(context).Settings,
+                                style: TextStyle(
+                                  fontSize: ScreenHeight! / 46,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Cairo-VariableFont_slnt',
+                                ),
+                              ),
+                            ),
+
+
                           ],
                         ),
                       ),

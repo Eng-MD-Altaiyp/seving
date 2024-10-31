@@ -5,7 +5,6 @@ import 'package:seving/first%20page/login_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:sqflite/sqflite.dart';
 import 'Models/Models_And_Classes/Classes _and_barameters.dart';
-import 'Navigetor_Pages.dart';
 import 'Screens/User_Setting_Account/User_Setting_Account.dart';
 import 'first page/signup_screen.dart';
 import 'first page/splash_screen.dart';
@@ -44,6 +43,7 @@ class _MyAppState extends State<MyApp> {
     var user = await data_metter.readData('SELECT * FROM Users');
     if (user.isNotEmpty) {
       Map<String, dynamic> userData = user.first;
+      User_ID = userData['user_id'];
       User_Names = userData['user_name'];
       User_Email = userData['user_email'];
       Passs = userData['user_password'];
@@ -56,6 +56,7 @@ class _MyAppState extends State<MyApp> {
       User_Names = 'User';
       User_Email = 'Seving@gmail.com';
       Passs = '1234';
+      User_ID = 0;
       // selectedLanguage = 'Arabic';
 
       // Repeat = true;
@@ -91,20 +92,19 @@ class _MyAppState extends State<MyApp> {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               if (snapshot.data!) {
-                // getUserData();
-                return SplashScreen();
+                return SplashScreen(test: true);
               } else {
-                return SignUpScreen();
+                return SplashScreen(test:false);
               }
             } else {
-              return  SplashScreen();
+              return  SplashScreen(test:false);
             }
           },
         ),
         // Navigetor_Pages(),
         // SplashScreen(),
         routes: {
-          '/login': (context) => LoginScreen(setLocale: _setLocale),
+          '/login': (context) => LoginScreen(),
           '/Settings': (context) => Settings_Account(setLocale: _setLocale)
         },
       ),

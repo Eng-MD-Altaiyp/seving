@@ -129,7 +129,8 @@ class _add_goalsState extends State<add_goals> {
               child: InkWell(
                 onTap: () {
                   setState(() {
-                    Navigator.push(
+                    // Navigator.of(context).pop();
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => Navigetor_Pages()),
                     );
@@ -1307,7 +1308,7 @@ class _add_goalsState extends State<add_goals> {
             borderRadius: BorderRadius.circular(9),
           ),
           child: SizedBox(
-            height: ScreenHeight! / 2.2,
+            height: ScreenHeight! / 1.9,
             child: Column(
               children: [
                 Expanded(
@@ -1575,8 +1576,8 @@ class _add_goalsState extends State<add_goals> {
                                                   : Alignment.centerRight,
                                               child: Padding(
                                                 padding:
-                                                    const EdgeInsets.symmetric(
-                                                        horizontal: 20.0),
+                                                const EdgeInsets.symmetric(
+                                                    horizontal: 20.0),
                                                 child: Text(
                                                   AppLocalizations.of(context)
                                                       .BuyMotorbike,
@@ -1585,7 +1586,74 @@ class _add_goalsState extends State<add_goals> {
                                                     fontSize: 18,
                                                     color: Colors.grey.shade700,
                                                     fontFamily:
-                                                        'Cairo-VariableFont_slnt',
+                                                    'Cairo-VariableFont_slnt',
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 5, right: 10, left: 10),
+                                child: InkWell(
+                                  onTap: () {
+                                    setState(() {
+                                      Type_Goal = 'Other';
+                                      Navigator.of(context).pop();
+                                    });
+                                  },
+                                  child: Container(
+                                    height: 50,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    child: Align(
+                                      alignment: lang == 'English'
+                                          ? Alignment.centerLeft
+                                          : Alignment.centerRight,
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            flex: 1,
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 2, right: 2),
+                                              child: Center(
+                                                child: SvgPicture.asset(
+                                                  'assets/icons/other-address.svg',
+                                                  // weight: 40,
+                                                  width: 30,
+                                                  color: On_Of_color,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            flex: 4,
+                                            child: Align(
+                                              alignment: lang == 'English'
+                                                  ? Alignment.centerLeft
+                                                  : Alignment.centerRight,
+                                              child: Padding(
+                                                padding:
+                                                const EdgeInsets.symmetric(
+                                                    horizontal: 20.0),
+                                                child: Text(
+                                                  AppLocalizations.of(context)
+                                                      .BuyOther,
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 18,
+                                                    color: Colors.grey.shade700,
+                                                    fontFamily:
+                                                    'Cairo-VariableFont_slnt',
                                                   ),
                                                 ),
                                               ),

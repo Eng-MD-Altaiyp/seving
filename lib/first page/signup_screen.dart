@@ -50,17 +50,28 @@ class _SignUpScreenState extends State<SignUpScreen> {
     if(readData.isEmpty)
       {
         int insertD = await data_metter.insertData("""
-          INSERT INTO 'Users' ('user_name','user_email','user_password')
-          VALUES ('${User_Name.text}','${Email.text}','${Password.text}')
+          INSERT INTO 'Users' ('user_name','user_email','user_password','user_our')
+          VALUES ('${User_Name.text}','${Email.text}','${Password.text}','${true}')
           """);
 
         print('   Gooooooooooooooooooooooooooooooooooood    $insertD');
-
+        var user = await data_metter.readData('SELECT * FROM Users');
+        if (user.isNotEmpty) {
+          Map<String, dynamic> userData = user.first;
+          User_ID = userData['user_id'];
+          User_Names = userData['user_name'];
+          User_Email = userData['user_email'];
+          Passs = userData['user_password'];
+          // selectedLanguage = userData['language'];
+          // Repeat = userData['Repeat'];
+          // Navigator.of(context).pushReplacement(
+          //     MaterialPageRoute(builder: (context) => Navigetor_Pages()));
+        }
         Future.delayed(Duration(seconds: 2), () {
           checkserver = true;
-          User_Names = User_Name.text;
-          Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => Navigetor_Pages()));
+          // User_Names = User_Name.text;
+          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context)=>
+          Navigetor_Pages()), (route) => false);
         });
       }
     else if(readData.isNotEmpty)

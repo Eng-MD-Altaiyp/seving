@@ -48,6 +48,7 @@ class DataBase_Metter {
   "user_id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
    "user_name" TEXT NOT NULL,
    "user_email" TEXT NOT NULL,
+   "user_our" BOOLEAN NOT NULL,
    "user_password" TEXT NOT NULL
          )
     ''');

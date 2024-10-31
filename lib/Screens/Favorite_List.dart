@@ -104,6 +104,9 @@ class _Favorite_ListState extends State<Favorite_List> {
     } else if(type == 'Car')
     {
       type = 'assets/icons/service-type-6.svg';
+    }else if(type == 'Other')
+    {
+      type = 'assets/icons/other-address.svg';
     } return type;
   }
   String Type_Goal_Name(String type)
@@ -119,6 +122,9 @@ class _Favorite_ListState extends State<Favorite_List> {
     } else if(type == 'Car')
     {
       type = '${AppLocalizations.of(context).BuyCar}';
+    } else if(type == 'Other')
+    {
+      type = '${AppLocalizations.of(context).BuyOther}';
     } return type;
   }
 

@@ -3,15 +3,10 @@ import 'package:flutter/material.dart';
 Color primary100 = const Color(0xFFd4eaf7);
 Color primary200 = const Color(0xFFb6ccd8);
 Color primary300 = const Color(0xFF3b3c3d);
-Color accent100 = const Color(0xFF71c4ef);
 Color accent200 = const Color(0xFF00668c);
 Color text100 = const Color(0xFF1d1c1c);
-Color text200 = const Color(0xFF313d44);
 Color bg100 = const Color(0xFFfffefb);
-Color bg200 = const Color(0xFFf5f4f1);
-Color bg300 = const Color(0xFFcccbc8);
 Color Orange = const Color(0xffF29030);
-Color Orange_sh = const Color(0xf0f29030);
 Color Orange_Shadowe = const Color(0xfff29030);
 Color Lunguage_Buttom = const Color(0x52f29030);
 Color Blue_app = const Color(0xff245389);
@@ -23,27 +18,10 @@ Color red_error = const Color(0xD5E53232);
 Color delete2 = const Color(0xDFE53232);
 Color delete = const Color(0x18E53232);
 Color green_god = const Color(0xFF38968E);
-Color On_Of = const Color(0xFF07161E);
-
-var color;
-
-
 Color color1 = const Color(0x5CEFF5F5);
-Color color1x = const Color(0xFF252525);
 Color color2p = const Color(0xFF97A3AC);
-Color color2px = const Color(0xFF323A3A);
-Color color2 = const Color(0xFFD6E4E5);
-Color color2x = const Color(0xFF2D3131);
 Color color3 = const Color(0xFF494D74);
-Color color3x = const Color(0xFF131D1E);
 Color color3p = const Color(0xA5497174);
-Color color3px = const Color(0xA50C1313);
-Color color4 = const Color(0xFDB14723);
-Color color4x = const Color(0xFD230E07);
-Color color4p = const Color(0x9DB14723);
-Color color4px = const Color(0x9D1A0A05);
-String language = 'Arabic';
-String chenglanguage = language;
 
 
 

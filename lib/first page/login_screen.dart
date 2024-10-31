@@ -21,8 +21,8 @@ import '../localization/app_localizations.dart';
 
 
 class LoginScreen extends StatefulWidget {
-  final Function(Locale) setLocale;
-  const LoginScreen({super.key,required this.setLocale});
+  // final Function(Locale) setLocale;
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -61,11 +61,18 @@ class _LoginScreenState extends State<LoginScreen> {
       }
    if(User_Names == User_Name_Text.text && Passs == Password.text)
      {
-       Future.delayed(Duration(seconds: 2), () {
-         checkserver = true;
-         Navigator.of(context).pushReplacement(
-             MaterialPageRoute(builder: (context) => Navigetor_Pages()));
-       });
+       int Open_Session =await Open_Session_Method();
+      if(Open_Session > 0)
+        {
+          Future.delayed(Duration(seconds: 2), () {
+            checkserver = true;
+            Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => Navigetor_Pages()));
+          });
+        }
+      else
+        con("${AppLocalizations.of(context).Error_In_Session}",
+            "assets/icons/warning.svg", false);
      }
    else
      {
@@ -540,6 +547,21 @@ class _LoginScreenState extends State<LoginScreen> {
       context: context,
       onTap: () => print('Notification tapped!'),
     );
+  }
+
+  Future<int> Open_Session_Method() async{
+    int update = await data_metter.updateData("""
+      UPDATE  'Users' SET
+       'user_our' = "true"
+        WHERE user_id = ${User_ID.toInt()}
+      """);
+    if(update > 0) {
+      print('Log In State False');
+      print('updated Ofline ===========    =========== $update');
+    }
+    else
+      print('Log In State True');
+    return update;
   }
 }
 

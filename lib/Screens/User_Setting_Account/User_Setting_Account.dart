@@ -1,9 +1,14 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:in_app_notification/in_app_notification.dart';
 import '../../Models/Models_And_Classes/Classes _and_barameters.dart';
 import '../../Models/Models_And_Classes/Colors.dart';
 import '../../Navigetor_Pages.dart';
 import '';
+import '../../first page/login_screen.dart';
+import '../../first page/signup_screen.dart';
 import '../../localization/app_localizations.dart';
 
 class Settings_Account extends StatefulWidget {
@@ -840,26 +845,58 @@ class _Delete_outState extends State<Delete_out> {
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 10, horizontal: 15),
-                                    child: Container(
-                                      width: 200,
-                                      height: 50,
-                                      child: Center(
-                                        child: Text(
-                                          widget.named == 'delete'
-                                              ? AppLocalizations.of(context)
-                                                  .delete
-                                              : AppLocalizations.of(context)
-                                                  .signout,
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.white,
-                                            fontFamily: 'Montserrat-Regular',
+                                    child: GestureDetector(
+                                      onTap: ()async
+                                      {
+                                         // Log_Out();
+                                        if( widget.named == 'delete')
+                                          {
+                                            int Delete_Session = await Delete_Session_Method();
+                                            if(Delete_Session > 0)
+                                              {
+                                                print('Delete Session');
+                                                exit(0);
+                                              }
+                                          }
+                                        else{
+                                          int Close_Session = await Close_Session_Method();
+                                          if( Close_Session > 0)
+                                          {
+                                            print('Log In State False');
+                                            // Navigator.of(context)
+                                            //     .pushReplacement(MaterialPageRoute(builder: (context) => LoginScreen()));
+                                            Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context)=>
+                                                LoginScreen()), (route) => false);
+                                          }
+                                          else
+                                          {
+                                            print('Log In State True');
+                                            con("${AppLocalizations.of(context).Error_In_Session}",
+                                                "assets/icons/warning.svg", false);
+                                          }
+                                        }
+                                      },
+                                      child: Container(
+                                        width: 200,
+                                        height: 50,
+                                        child: Center(
+                                          child: Text(
+                                            widget.named == 'delete'
+                                                ? AppLocalizations.of(context)
+                                                    .delete
+                                                : AppLocalizations.of(context)
+                                                    .signout,
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.white,
+                                              fontFamily: 'Montserrat-Regular',
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      decoration: BoxDecoration(
-                                        color: delete2,
-                                        borderRadius: BorderRadius.circular(30),
+                                        decoration: BoxDecoration(
+                                          color: delete2,
+                                          borderRadius: BorderRadius.circular(30),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -915,5 +952,87 @@ class _Delete_outState extends State<Delete_out> {
         ],
       ),
     );
+  }
+  con(var masg, var icon, bool color) {
+    InAppNotification.show(
+      duration: Duration(seconds: 3),
+      child: Padding(
+        padding: const EdgeInsets.only(top: 30, left: 5, right: 5),
+        child: Container(
+          width: double.infinity,
+          height: 60,
+          decoration: BoxDecoration(
+            // color: color,
+              gradient: LinearGradient(
+                begin: lang == 'English'
+                    ? Alignment.centerLeft
+                    : Alignment.centerRight,
+                end: lang == 'English'
+                    ? Alignment.centerRight
+                    : Alignment.centerLeft,
+                colors: [
+                  color == true
+                      ? const Color(0xD87CE892)
+                      : const Color(0xffCFACAD),
+                  color == true
+                      ? const Color(0xB268D87F)
+                      : const Color(0xffB78285),
+                  color == true
+                      ? const Color(0x968BDC9C)
+                      : const Color(0xff9F595C),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(10)),
+          child: Row(
+            children: [
+              Expanded(
+                flex: 1,
+                child: Center(
+                    child: SvgPicture.asset(
+                      "$icon",
+                      height: 40,
+                      width: 40,
+                    )),
+              ),
+              Expanded(
+                flex: 3,
+                child: Align(
+                  alignment: lang == 'English'
+                      ? Alignment.centerLeft
+                      : Alignment.centerRight,
+                  child: Text(
+                    "$masg",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+      context: context,
+      onTap: () => print('Notification tapped!'),
+    );
+  }
+  Future<int> Close_Session_Method()async {
+    // int ID = int.parse(User_ID.toString());
+    int update = await data_metter.updateData("""
+      UPDATE  'Users' SET
+       'user_our' = "false"
+        WHERE user_id = ${User_ID.toInt()}
+      """);
+
+    return update;
+  }
+
+  Future<int> Delete_Session_Method()async {
+    int delete = await data_metter.deleteData("""
+      DELETE FROM 'Users' 
+        WHERE user_id = ${User_ID.toInt()}
+      """);
+
+    return delete;
   }
 }

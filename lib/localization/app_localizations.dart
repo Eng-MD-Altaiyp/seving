@@ -71,6 +71,8 @@ class AppLocalizations {
   String get Complate1 => locale.languageCode == 'en' ? 'You have completed ' : 'لقد اكملت ';
   String get Complate2 => locale.languageCode == 'en' ? ' of your goal' : ' من هدفك';
   String get BuyCar => locale.languageCode == 'en' ? 'Buy Car' : 'شراء سيارة';
+  String get BuyOther => locale.languageCode == 'en' ? 'Other' : 'اخرى';
+  String get Search_about => locale.languageCode == 'en' ? 'Search About...' : 'البحث عن خدمة...';
   String get Amount_paid => locale.languageCode == 'en' ? 'Amount paid' : 'المبلغ المدفوع';
   String get Favorite_List => locale.languageCode == 'en' ? 'Favorite List' : 'قائمة المفضلة';
 
@@ -89,6 +91,7 @@ class AppLocalizations {
   String get BuyPhone => locale.languageCode == 'en' ? 'Buy Phone' : 'شراء هاتف';
   String get BuyTruck => locale.languageCode == 'en' ? 'Buy Truck' : 'شراء شاحنة';
   String get Ok_Date => locale.languageCode == 'en' ? 'Done' : 'تم';
+  String get Error_In_Session => locale.languageCode == 'en' ? 'Error In Session' : 'خطاء في الجلسة';
   String get Start_date => locale.languageCode == 'en' ? 'Date of beginning' : 'تاريخ البداء';
   String get Confirm_saving => locale.languageCode == 'en' ? 'Confirm Saving' : 'تأكيد الحفظ';
   String get Added => locale.languageCode == 'en' ? 'Target added' : 'تم أضافة الهدف';

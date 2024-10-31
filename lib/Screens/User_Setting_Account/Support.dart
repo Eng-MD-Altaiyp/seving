@@ -94,7 +94,7 @@ class _supportState extends State<support> {
                             green_god,
                             'assets/icons/whatsapp-2.svg',
                             AppLocalizations.of(context).WhatsApp_Serves,
-                            'whtasapp1','505585434787'),
+                            'whtasapp1','+966538384963'),
                       ),
                     ),
                     Expanded(
@@ -105,7 +105,7 @@ class _supportState extends State<support> {
                             green_god,
                             'assets/icons/whatsapp-2.svg',
                             AppLocalizations.of(context).WhatsApp_Serves,
-                            'whtasapp2','505585434787'),
+                            'whtasapp2','+966594956643'),
                       ),
                     ),
                     Expanded(
@@ -126,8 +126,8 @@ class _supportState extends State<support> {
                         child: connecation(
                             Blue_Border,
                             'assets/icons/call-calling-2.svg',
-                            '+966 505585434787',
-                            'call','505585434787'),
+                            '+966 538384963',
+                            'call','+966538384963'),
                       ),
                     ),
                     // Expanded(
